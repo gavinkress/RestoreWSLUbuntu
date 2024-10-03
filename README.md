@@ -1,3 +1,3 @@
 # RestoreWSLUbuntu
- Fully Configurable Bsckup snd Restore Script for WSL Distributions
-[a relative link](RestoreWSLUbuntu.md)
+Fully Configurable Backup snd Restore Script for WSL Distributions
+[RestoreWSLUbuntu](RestoreWSLUbuntu.md)
