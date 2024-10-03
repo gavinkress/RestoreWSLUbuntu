@@ -1,2 +1,4 @@
 # RestoreWSLUbuntu
- Fully Configurable Bsckup snd Restore Script for WSL Distributions
+- Fully Configurable Backup snd Restore Script for WSL Distributions
+- Restoration Pipeline: 
+[RestoreWSLUbuntu](RestoreWSLUbuntu.md)
