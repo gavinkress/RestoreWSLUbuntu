@@ -1,11 +1,11 @@
 ____________________________________________________________________
 --------------------------------------------------------------------
-# Fully Configurable Bsckup snd Restore Script for WSL Distributions
+# Fully Configurable Backup and Restore Script for WSL Distributions
 _____________________________________________________________________
 ---------------------------------------------------------------------
 
 - Name: WSLVersionControl
-- Homepage: https://github.com/gavinkress/WSLVersionControl
+- Homepage: https://github.com/gavinkress/RestoreWSLUbuntu
 - Author: Gavin Kress
 - email: gavinkress@gmail.com
 - Date: 9/30/2024
@@ -65,7 +65,7 @@ echo $filetext >>$env:USERPROFILE/.wslconfig
 wsl --shutdown
 ```
 ------------------------------------------------
-## CONFIGURE BASHRC HERE - SEE END OF SCRIPT
+## Configure bash rc - *see end of workflow*
 ------------------------------------------------
 ### At minimum add the following to your .bashrc or run
 
@@ -89,7 +89,7 @@ export -f Complete_Upgrade
 cd ~/
 wsl
 ```
-#### ensure your ubuntu pro token is set to UBUNTU_ONE_TOKEN if you want pro features
+#### Ensure your ubuntu pro token is set to UBUNTU_ONE_TOKEN if you want pro features
 
 ```bash
 sudo pro attatch $UBUNTU_ONE_TOKEN
@@ -118,7 +118,7 @@ exit
 wsl --shutdown
 ```
 
-### Verify Image Health *ONLY RUN IF NEEDED*
+### Verify Image Health - *only run if needed*
 ---------------------------------------------
 ```bash
 cd ~\
@@ -143,7 +143,7 @@ clear
 sudo dmesg | sort -u
 sudo journalctl -xe | sort -u
 ```
-### CUSTOM INSTALLATION WORKFLOWS *Manually Modify based on your needs*
+### Cusoom Workflows - *manually Modify based on your needs*
 -----------------------------------------------------------------------
 
 #### Download most recent version of fslinstaller and install fsl
@@ -181,9 +181,8 @@ if (Test-Path -Path $RCyPyVenv_dir) {
 }
 ```
 
-# Create and build BASH RC File *YOU MUST MODIFY THIS AND ADD TO BASHRC MANUALLY*
+# Example BASH RC File - *Yours will likely be different*
 ----------------------------------------------------------------------------------
-bashrctext = @"
 
 ```bash
 # ~/.bashrc: executed by bash(1) for non-login shells.
@@ -334,4 +333,4 @@ export -f Complete_Upgrade
 #export FS_LICENSE FREESURFER_HOME XDG_RUNTIME_DIR PATH
 
 ```
-"@
+
