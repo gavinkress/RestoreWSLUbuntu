@@ -251,6 +251,19 @@ sudo dmesg | sort -u
 sudo journalctl -xe | sort -u
 ```
 
+## Kali Linux
+--------------
+```powershell
+wsl --install Kali-Linux
+sudo apt install python2
+
+```
+## Add Complete_Upgrade to .bashrc with python2
+```bash
+Complete_Upgrade
+sudo apt install kali-linux-everything
+```
+
 ## Example BASH RC File - *Yours will likely be different*
 ----------------------------------------------------------------------------------
 
