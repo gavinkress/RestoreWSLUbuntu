@@ -32,12 +32,6 @@ others will need more detailed modifications.
 - [Install WSL for VSCode](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
 - [Install Docker for Windows](https://docs.docker.com/docker-for-windows/install/)
 
-## TO DO
----------
-
-- [ ] verify install and integrate gpu
-- [ ] backackup for wsl
-- [ ] kali linux
 
 ### Fresh Install Ubuntu
 -------------------------
