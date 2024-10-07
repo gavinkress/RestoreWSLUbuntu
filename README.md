@@ -230,16 +230,16 @@ wsl
 arr1=($(df -Th | awk '{print $1}' | sort -u))
 for loc in "${arr1[@]}" # ignore
 do 
-    #sudo e2fsck $loc -p
-    #sudo e2fsck $loc -y
-    #sudo umount /$loc
-    #sudo e2fsck $loc -p
-    #sudo e2fsck $loc -y
-    #sudo mount /$loc
-    #sudo mount -o remount,rw /$loc
-    #sudo chown -R %USERPROFILE% /$loc
-    #sudo chmod -R u+w /$loc
-    #sudo chattr -i /$loc
+    sudo e2fsck $loc -p
+    sudo e2fsck $loc -y
+    sudo umount /$loc
+    sudo e2fsck $loc -p
+    sudo e2fsck $loc -y
+    sudo mount /$loc
+    sudo mount -o remount,rw /$loc
+    sudo chown -R %USERPROFILE% /$loc
+    sudo chmod -R u+w /$loc
+    sudo chattr -i /$loc
 done
 
 sudo df
